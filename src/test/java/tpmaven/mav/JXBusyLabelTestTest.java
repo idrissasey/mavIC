@@ -1,32 +1,29 @@
 package tpmaven.mav;
 
-import static org.junit.Assert.*;
+import java.awt.Dimension;
 
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
+import junit.framework.TestCase;
 
-public class JXBusyLabelTestTest {
+public class JXBusyLabelTestTest extends TestCase {
 
-	@Before
-	public void setUp() throws Exception {
+	protected void setUp() throws Exception {
+		super.setUp();
 	}
 
-	@After
-	public void tearDown() throws Exception {
+	protected void tearDown() throws Exception {
+		super.tearDown();
 	}
 
-	@Test
 	public void testJXBusyLabelTest() {
 		//fail("Not yet implemented");
+		JXBusyLabelTest fenetre = new JXBusyLabelTest();
+		assertEquals(fenetre.getSize(), new Dimension(400,160));
 	}
 
-	@Test
 	public void testActionPerformed() {
 		//fail("Not yet implemented");
 	}
 
-	@Test
 	public void testMain() {
 		//fail("Not yet implemented");
 	}
