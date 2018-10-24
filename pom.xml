@@ -37,23 +37,16 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
             <configuration>
-                <source>1.7</source>
-                <target>1.7</target>
+                <source>1.8</source>
+                <target>1.8</target>
             </configuration>
       </plugin>
         <!-- utilisation de la version 2.3 de site compatible avec maven 3  -->
-<plugin>
-      <artifactId>maven-site-plugin</artifactId>
-      <version>3.0-beta-2</version>
-      <executions>
-        <execution>
-          <id>attach-descriptor</id>
-          <goals>
-            <goal>attach-descriptor</goal>
-          </goals>
-        </execution>
-      </executions>
-    </plugin>
+ <plugin>
+        <groupId>org.sonarsource.scanner.maven</groupId>
+        <artifactId>sonar-maven-plugin</artifactId>
+        <version>3.5.4</version>
+      </plugin>
         
     </plugins>
     

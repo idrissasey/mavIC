@@ -17,7 +17,8 @@ import org.jdesktop.swingx.JXBusyLabel;
  * */
 
 public class JXBusyLabelTest extends JFrame implements ActionListener {
-
+ 
+	
   JXBusyLabel bLabel1;
 	JComboBox comboBackground, comboForeground;
 	JButton btnStart, btnStop;
